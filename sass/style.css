@@ -86,3 +86,90 @@ body {
 .header-wrapper a {
   font-family: "Roboto", sans-serif;
 }
+
+/*Services*/
+.services {
+  min-height: 568px;
+  padding: 120px 0;
+}
+
+.section-title {
+  font-size: 39px;
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 15px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  margin: 0;
+  padding: 0 0 80px 0;
+}
+
+.services-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.element {
+  text-align: center;
+}
+
+.element i {
+  font-size: 36px;
+  border: 3px solid #ffd32a;
+  width: 73px;
+  height: 73px;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #ffd32a;
+}
+
+.element h1 {
+  font-size: 20px;
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 0 10px 0;
+}
+
+.element p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/*Portfolio-cards*/
+.portfolio {
+  min-height: 1218px;
+  background-color: #dfe4ea;
+  padding: 120px 0;
+}
+
+.portfolio-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element-p {
+  display: flex;
+  flex: 0 0 33.3333%;
+  height: 390px;
+  align-items: flex-end;
+}
+
+.card {
+  width: 90%;
+  margin-left: 15px;
+  height: 91px;
+  background-color: #fff;
+  height: 370px;
+}
+
+.card h1 {
+  margin: 280px 0 0 0;
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+}
