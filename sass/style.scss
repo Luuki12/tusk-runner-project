@@ -10,6 +10,9 @@ $font-vibes: 'Great Vibes', cursive;
 
 /*Global*/
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     line-height: 1.7; 
@@ -17,6 +20,7 @@ body {
 .container {
     max-width: 940px;
     padding: 0;
+    margin: 0 auto;
 }
 
 /*Navigation*/ 
@@ -54,14 +58,16 @@ body {
 /*Header*/
 
 .header {
-    height: 700px;
+    min-height: 700px;
     background-color: #dfe4ea;
+    display: flex;
 }
 .header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 205px 0 0 0;  
+    padding: 205px 0 0 0; 
+    text-align: center; 
 }
 .header-wrapper h1 {
     font-size: 54px;
@@ -110,11 +116,12 @@ body {
 }
 .services-element {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .element {
     text-align: center;
+    flex: 0 0 33.333%;
 }
 .element i {
     font-size: 36px;
@@ -144,41 +151,53 @@ body {
     background-color: #dfe4ea;
     padding: 120px 0;
 }
-.portfolio-elements {
+.card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.element-p {
-    display: flex;
-    flex: 0 0 33.3333%;  
+.card-element {
+    flex: 0 0 33.3333%;
+    width: 290px;
     height: 390px;
-    
-    align-items: flex-end;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
-.card {
-    
-    width: 90%;
-    margin-left: 15px;
-    height: 91px;
-    background-color: $color-regular;
-    height: 360px;
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.card h1 {
-    margin: 280px 0 0 0;
-    text-align: center;
+.dscr h1 {
+    margin: 0;
     font-family: $font-main;
+}
+.dscr p {
+    margin: 0;
+    font-family: $font-italic;
+}
+.dscr {
+    text-align: center;
+    background-color: $color-regular;
+    padding: 10px;
+}
+.image {
+    height: 100%;
 }
 
 /*Footer*/
 
 footer {
-    width: 940px;
+    max-width: 940px;
     height: 120px;
     margin: 0 auto;
 }
 .list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     height: 100%;
 }
 .list ul {
@@ -197,7 +216,4 @@ footer {
 }
 .list i {
     color: $color-regular;
-}
-span {
-    padding: 0 60px 0 0;
 }

@@ -1,5 +1,9 @@
 /*Variables*/
 /*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   line-height: 1.7;
@@ -8,6 +12,7 @@ body {
 .container {
   max-width: 940px;
   padding: 0;
+  margin: 0 auto;
 }
 
 /*Navigation*/
@@ -46,8 +51,9 @@ body {
 
 /*Header*/
 .header {
-  height: 700px;
+  min-height: 700px;
   background-color: #dfe4ea;
+  display: flex;
 }
 
 .header-wrapper {
@@ -55,6 +61,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 205px 0 0 0;
+  text-align: center;
 }
 
 .header-wrapper h1 {
@@ -109,12 +116,13 @@ body {
 
 .services-element {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .element {
   text-align: center;
+  flex: 0 0 33.333%;
 }
 
 .element i {
@@ -147,42 +155,59 @@ body {
   padding: 120px 0;
 }
 
-.portfolio-elements {
+.card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.element-p {
-  display: flex;
+.card-element {
   flex: 0 0 33.3333%;
+  width: 290px;
   height: 390px;
-  align-items: flex-end;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  width: 90%;
-  margin-left: 15px;
-  height: 91px;
-  background-color: #fff;
-  height: 360px;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card h1 {
-  margin: 280px 0 0 0;
-  text-align: center;
+.dscr h1 {
+  margin: 0;
   font-family: "Catamaran", sans-serif;
+}
+
+.dscr p {
+  margin: 0;
+  font-family: "PT Serif", serif;
+}
+
+.dscr {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.image {
+  height: 100%;
 }
 
 /*Footer*/
 footer {
-  width: 940px;
+  max-width: 940px;
   height: 120px;
   margin: 0 auto;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -203,8 +228,4 @@ footer {
 
 .list i {
   color: #fff;
-}
-
-span {
-  padding: 0 60px 0 0;
 }
