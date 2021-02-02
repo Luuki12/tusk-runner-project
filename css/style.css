@@ -7,8 +7,7 @@ body {
 
 .container {
   max-width: 940px;
-  padding: 0 20px;
-  margin: 0px auto;
+  padding: 0;
 }
 
 /*Navigation*/
@@ -181,12 +180,50 @@ body {
   margin-left: 15px;
   height: 91px;
   background-color: #fff;
-  height: 370px;
+  height: 360px;
 }
 
 .card h1 {
   margin: 280px 0 0 0;
   text-align: center;
   font-family: "Catamaran", sans-serif;
+}
+
+/*Footer*/
+footer {
+  width: 940px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+
+.list ul {
+  list-style-type: none;
+}
+
+.list li {
+  display: inline-block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.list i {
+  color: #fff;
+}
+
+span {
+  padding: 0 60px 0 0;
 }
 /*# sourceMappingURL=style.css.map */
