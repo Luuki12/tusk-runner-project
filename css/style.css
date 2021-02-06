@@ -54,7 +54,10 @@ body {
 /*Header*/
 .header {
   min-height: 700px;
-  background-color: #dfe4ea;
+  background-image: url("https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   display: -ms-flexbox;
   display: flex;
 }
@@ -76,12 +79,14 @@ body {
   padding: 0 0 60px 0;
   font-family: "Catamaran", sans-serif;
   font-weight: 900;
+  color: #fff;
 }
 
 .header-wrapper p {
   font-size: 39px;
   margin: 0;
   font-family: "PT Serif", serif;
+  color: #fff;
 }
 
 .btn {
@@ -96,6 +101,7 @@ body {
       align-items: center;
   background-color: #ffd32a;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .header-wrapper a {
@@ -128,14 +134,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .element {
+  margin: 40px 0 0 0;
   text-align: center;
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
+  width: 310px;
+  height: 185px;
 }
 
 .element i {
@@ -164,7 +171,7 @@ body {
 /*Portfolio-cards*/
 .portfolio {
   min-height: 1218px;
-  background-color: #dfe4ea;
+  background-color: #ecf0f1;
   padding: 120px 0;
 }
 
@@ -173,13 +180,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  margin: 20px 20px 0 0;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .card-element {
-  -ms-flex: 0 0 33.3333%;
-      flex: 0 0 33.3333%;
   width: 290px;
   height: 390px;
   padding: 15px;
@@ -199,11 +205,13 @@ body {
 .dscr h1 {
   margin: 0;
   font-family: "Catamaran", sans-serif;
+  font-size: 20px;
 }
 
 .dscr p {
   margin: 0;
   font-family: "PT Serif", serif;
+  font-size: 15px;
 }
 
 .dscr {
@@ -221,25 +229,21 @@ footer {
   max-width: 940px;
   height: 120px;
   margin: 0 auto;
-}
-
-.list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.list ul {
+.social-media ul {
   list-style-type: none;
 }
 
-.list li {
+.social-media li {
   display: inline-block;
   margin-right: 10px;
   width: 50px;
@@ -250,7 +254,20 @@ footer {
   text-align: center;
 }
 
-.list i {
+.social-media i {
   color: #fff;
+}
+
+.footer-link {
+  width: 320px;
+}
+
+.footer-link p {
+  text-align: center;
+}
+
+.social-media {
+  width: 300px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
